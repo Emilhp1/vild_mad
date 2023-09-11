@@ -77,7 +77,7 @@ p {
 }
 
 body {
-  background-color: #96de98;
+  background-image: linear-gradient(to bottom right, #96de98, #2b7e32);
 }
 .tab {
   border: solid #fecd55;
