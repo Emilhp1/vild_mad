@@ -44,3 +44,5 @@ function showData(month) {
 
   document.querySelector(".grid_kat").appendChild(copy);
 }
+
+hej;
