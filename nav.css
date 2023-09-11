@@ -44,17 +44,3 @@ ul {
 .menu li:hover .submenu {
   display: block;
 }
-
-/* Styles for the mobile menu toggle button */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.menu-toggle span {
-  width: 30px;
-  height: 3px;
-  background-color: #fff;
-  margin: 3px 0;
-}

@@ -1,0 +1,93 @@
+/**
+ * Tabs
+ */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tabs label {
+  order: 1;
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background: #2b7e32;
+  font-weight: bold;
+  transition: background ease 0.2s;
+  border-radius: 15px;
+}
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #2b7e32;
+}
+.tabs input[type="radio"] {
+  display: none;
+}
+.tabs input[type="radio"]:checked + label {
+  background: #fecd55;
+  color: #2b7e32;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+
+/**
+ * Generic Styling
+*/
+body {
+  background: #96de98;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-top: 10vh;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0 auto;
+  font-size: 112%;
+}
+
+img {
+  width: 75%;
+  margin-left: 10%;
+}
+.overskrift {
+  margin-left: 30%;
+  margin-right: 30%;
+  border: solid #fecd55;
+}
+p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+body {
+  background-color: #96de98;
+}
+.tab {
+  border: solid #fecd55;
+  margin-right: 10%;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
