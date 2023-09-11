@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid_billeder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
