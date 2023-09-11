@@ -1,7 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 main {
   max-width: 1000px;
   margin: auto;
@@ -11,16 +7,38 @@ img {
   height: auto;
   display: block;
 }
+h1 {
+  text-align: center;
+}
+p {
+  margin-bottom: 5rem;
+}
+a {
+  color: #ffffff;
+ 
+}
+.lovskov_knap {
+  background-color: #fecd55;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 30px;
+  margin: 20px;
+  border-radius: 50px;
+  
+}
 
-.grid_billeder {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  padding: 1rem;
+img{
+   margin-top: 3rem;
 }
 
 @media (min-width: 800px) {
   h1 {
     font-size: 5rem;
+    text-align: left;
   }
+  .grid_skov{
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
 }
