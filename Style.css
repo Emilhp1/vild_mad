@@ -1,0 +1,60 @@
+body,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Basic styles for the navigation */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  margin: 0 20px;
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Styles for the dropdown menu */
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  top: 100%;
+  left: 0;
+  padding: 10px 0;
+  width: 150px;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+/* Styles for the mobile menu toggle button */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
