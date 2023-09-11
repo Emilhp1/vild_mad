@@ -18,3 +18,18 @@ img {
   gap: 1rem;
   padding: 1rem;
 }
+
+footer {
+  width: 100%;
+  height: auto;
+  position: fixed;
+
+  background-image: url(/billeder/skov_1.svg);
+  background-size: cover;
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
