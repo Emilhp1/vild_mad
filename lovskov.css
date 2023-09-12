@@ -1,6 +1,6 @@
 .grid_kat {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 
 }
 
@@ -25,4 +25,24 @@
 
 .katboks:hover a {
     color: white;
+}
+
+.forar {
+    background-image: url('forar.jpg');
+    /* Replace 'forar.jpg' with the actual image path for Forår */
+}
+
+.sommer {
+    background-image: url('sommer.jpg');
+    /* Replace 'sommer.jpg' with the actual image path for Sommer */
+}
+
+.efteraar {
+    background-image: url('efteraar.jpg');
+    /* Replace 'efteraar.jpg' with the actual image path for Efterår */
+}
+
+.vinter {
+    background-image: url('vinter.jpg');
+    /* Replace 'vinter.jpg' with the actual image path for Vinter */
 }
