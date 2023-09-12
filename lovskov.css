@@ -1,0 +1,28 @@
+.grid_kat {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.katboks {
+    background-color: gray;
+    margin: 5%;
+    padding: 20%;
+    text-align: center;
+
+}
+
+.katboks a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    ;
+    text-decoration: none;
+}
+
+.katboks:hover {
+    background-color: rgb(235, 44, 44);
+}
+
+.katboks:hover a {
+    color: white;
+}
