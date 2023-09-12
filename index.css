@@ -1,0 +1,55 @@
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+h1 {
+  text-align: center;
+}
+p {
+  margin-bottom: 5rem;
+}
+a {
+  color: #ffffff;
+}
+.lovskov_knap {
+  background-color: #fecd55;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 30px;
+  margin: 20px;
+  border-radius: 50px;
+}
+.lovskov_knap:hover {
+  background-color: #fc3c2d;
+}
+img {
+  margin-top: 3rem;
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 5rem;
+    text-align: left;
+  }
+  .grid_index {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid_skov {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .grid_img {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  p {
+    margin-right: 10rem;
+    margin-bottom: 5rem;
+  }
+}
