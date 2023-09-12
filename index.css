@@ -46,4 +46,8 @@ img {
     grid-column: 2;
     grid-row: 1;
   }
+  p {
+    margin-right: 10rem;
+    margin-bottom: 5rem;
+  }
 }
