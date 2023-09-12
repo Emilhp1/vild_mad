@@ -7,8 +7,8 @@ ul {
 
 /* Basic styles for the navigation */
 .navbar {
-  background-color: #2b7e32;
-  color: #fecd55;
+  background-color: #fece55c0;
+  background-blend-mode: screen;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,7 +27,7 @@ ul {
 
 .menu a {
   text-decoration: none;
-  color: #fecd55;
+  color: #2b7e32;
 }
 
 /* Styles for the dropdown menu */
