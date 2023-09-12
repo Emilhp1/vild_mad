@@ -4,6 +4,7 @@
 .tabs {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 3%;
 }
 .tabs label {
   order: 1;
@@ -62,14 +63,17 @@ body {
   font-size: 112%;
 }
 
-img {
+.produktimg {
   width: 75%;
   margin-left: 10%;
+  border: solid black;
+  margin-top: 5%;
 }
 .overskrift {
   margin-left: 30%;
   margin-right: 30%;
   border: solid #fecd55;
+  text-align: center;
 }
 p {
   margin-left: 10%;
@@ -87,8 +91,16 @@ body {
 
 .footer {
   width: 100%;
-  margin: 0;
-  padding: 0;
+}
+
+.card {
+  background-color: white;
+  margin: 10%;
+  border: solid black;
+}
+.svamp {
+  width: 25%;
+  margin-left: 70%;
 }
 
 @media screen and (min-width: 800px) {
