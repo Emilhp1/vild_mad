@@ -16,7 +16,7 @@ document.querySelector("h2").textContent = snavn;
 
 console.log(season);
 
-fetch("https://ebwnpfllzucpiixhtnhu.supabase.co/rest/v1/vildmad3?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVid25wZmxsenVjcGlpeGh0bmh1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTM5MTIzMDEsImV4cCI6MjAwOTQ4ODMwMX0.CyZqh6CsJ8T2r-1KUO0oillkNqf7941nqLFY3jCnbSA&select=month" + id)
+fetch(url + season, options)
   .then((res) => res.json())
   .then(showProducts);
 
