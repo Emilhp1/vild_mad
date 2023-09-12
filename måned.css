@@ -29,3 +29,6 @@ body {
 #smallproducttemplate {
   background-color: white;
 }
+img {
+  max-width: 100%;
+}
