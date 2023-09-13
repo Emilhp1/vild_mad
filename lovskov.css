@@ -1,48 +1,62 @@
-.grid_kat {
+/**
+ * Generic Styling
+*/
+body {
+    background: linear-gradient(196.59deg, #96de98 0%, #23762A 75.52%);
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-top: 10vh;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0 auto;
+    font-size: 112%;
+}
+
+
+.grid_note {
     display: grid;
     grid-template-columns: 1fr;
 
 }
 
-.katboks {
-    background-color: gray;
-    margin: 5%;
-    padding: 20%;
-    text-align: center;
-
-}
-
-.katboks a {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.note a {
+    font-family: "schoolbell-pro", sans-serif;
+    font-size: 3rem;
     color: white;
-    ;
     text-decoration: none;
 }
 
-.katboks:hover {
-    background-color: rgb(235, 44, 44);
-}
-
-.katboks:hover a {
+/* .note:hover a {
     color: white;
-}
+} */
 
-.forar {
-    background-image: url('forar.jpg');
-    /* Replace 'forar.jpg' with the actual image path for Forår */
+.foraar {
+    background-image: url('noter/note_forar.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
 }
 
 .sommer {
-    background-image: url('sommer.jpg');
-    /* Replace 'sommer.jpg' with the actual image path for Sommer */
+    background-image: url('noter/note_sommer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .efteraar {
-    background-image: url('efteraar.jpg');
-    /* Replace 'efteraar.jpg' with the actual image path for Efterår */
+    background-image: url('noter/note_efterar.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .vinter {
-    background-image: url('vinter.jpg');
-    /* Replace 'vinter.jpg' with the actual image path for Vinter */
+    background-image: url('noter/note_vinter.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    position: sticky;
+    width: 100%;
 }
