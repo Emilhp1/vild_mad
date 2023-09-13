@@ -80,11 +80,13 @@ body {
   margin-top: 5%;
 }
 
+/* Tilføjet af kezia - border omkring h1 */
 .ramme {
   border: 10px solid #fecd55;
   text-align: center;
 }
 
+/* Tilføjet af kezia - Tilføjet padding + font */
 .overskrift {
   margin-left: 30%;
   margin-right: 30%;
@@ -124,28 +126,38 @@ body {
   margin-left: 70%;
 }
 
-/* Style for the icon container */
+/* Tilføjet af kezia - Tilføjet ikoner foran tekst */
 .icon {
   display: inline-block;
-  margin-right: 5px;
-}
-
-/* Style for the icon itself (adjust size as needed) */
-.icon img {
-  width: 24px;
-  /* Set the width of the icon */
-  height: 24px;
-  /* Set the height of the icon */
+  margin-right: 10px;
   vertical-align: middle;
-  /* Vertically align the icon with the text */
 }
 
+.icon img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Tilføjet af kezia - hænger sammen ikonerne og sørger for at de er ved siden af hinanden  */
+.text-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Tilføjet af kezia - border omkring h1 - Style for the text paragraphs*/
+.mund-text,
+.næse-text {
+  flex: 1;
+}
+
+/* Tilføjet af kezia - brødtekst font*/
 p {
   font-family: 'Lato', sans-serif;
   color: #ffffff;
 }
 
-/* Style for the speech bubble */
+/* Tilføjet af kezia - Styling for speech bubble */
 .speech-bubble {
   position: relative;
   background: #ffffff;
