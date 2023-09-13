@@ -15,25 +15,25 @@ fetch(url + "/rest/v1/seasons", {
 
 function showData(data) {
   console.log(data);
-  const gridKat = document.querySelector(".grid_note");
+  const grid_note = document.querySelector(".grid_note");
 
   data.forEach((item) => {
     console.log(item);
     const template = document.querySelector("template").content;
     const copy = template.cloneNode(true);
-    copy.querySelector(".note").textContent = item.navn;
+    copy.querySelector("a").textContent = item.navn;
     copy.querySelector("a").setAttribute("href", `måned.html?season=${item.id}&navn=${item.navn}`);
 
     if (item.navn === "Sommer") {
-      copy.querySelector("a").classList.add("sommer");
+      copy.querySelector(".note").classList.add("sommer");
     } else if (item.navn === "Vinter") {
-      copy.querySelector("a").classList.add("vinter");
+      copy.querySelector(".note").classList.add("vinter");
     } else if (item.navn === "Forår") {
-      copy.querySelector("a").classList.add("foraar");
+      copy.querySelector(".note").classList.add("foraar");
     } else if (item.navn === "Efterår") {
-      copy.querySelector("a").classList.add("efteraar");
+      copy.querySelector(".note").classList.add("efteraar");
     }
 
-    gridKat.appendChild(copy);
+    grid_note.appendChild(copy);
   });
 }

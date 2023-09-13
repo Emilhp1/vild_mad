@@ -5,58 +5,160 @@ body {
     background: linear-gradient(196.59deg, #96de98 0%, #23762A 75.52%);
     min-height: 100vh;
     box-sizing: border-box;
-    padding-top: 10vh;
-    font-weight: 300;
+    padding: 10vh 10%;
     line-height: 1.5;
     margin: 0 auto;
-    font-size: 112%;
 }
 
+h2 {
+    font-family: "schoolbell-pro", sans-serif;
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+}
+
+.border {
+    border: 10px solid #FFCD55;
+    padding: 10%;
+}
+
+.lov_figur {
+    width: 85%;
+    height: auto;
+    aspect-ratio: 1121.6/500.13;
+    position: absolute;
+    top: 16vh;
+    right: 5%;
+}
+
+.border h1 {
+    font-family: "schoolbell-pro", sans-serif;
+    font-size: 3.5rem;
+    color: white;
+    text-align: left;
+    position: relative;
+    bottom: 9vh;
+    left: -9%;
+}
+
+
+.lov_txt {
+    font-family: "schoolbell-pro", sans-serif;
+    font-size: 0.7rem;
+    color: #23762A;
+    position: absolute;
+    bottom: 69.5vh;
+    left: 16%;
+    padding-right: 36.3%;
+}
 
 .grid_note {
     display: grid;
     grid-template-columns: 1fr;
-
+    padding: 0 10%;
 }
 
-.note a {
+.link_s {
     font-family: "schoolbell-pro", sans-serif;
     font-size: 3rem;
     color: white;
     text-decoration: none;
+    position: relative;
+    top: 40%;
+    left: 35%;
 }
 
 /* .note:hover a {
     color: white;
 } */
 
-.foraar {
-    background-image: url('noter/note_forar.png');
+.note {
+    margin-top: 5%;
+}
+
+.note.foraar {
+    background-image: url('noter/note_foraar.svg');
     background-size: cover;
     background-repeat: no-repeat;
+    aspect-ratio: 1172.94/805;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.note.sommer {
+    background-image: url('noter/note_sommer.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 1172.94/805;
     width: 100%;
     height: auto;
 }
 
-.sommer {
-    background-image: url('noter/note_sommer.png');
+.note.efteraar {
+    background-image: url('noter/note_efteraar.svg');
     background-size: cover;
     background-repeat: no-repeat;
+    aspect-ratio: 1172.94/805;
+    width: 100%;
+    height: auto;
 }
 
-.efteraar {
-    background-image: url('noter/note_efterar.png');
+.note.vinter {
+    background-image: url('noter/note_vinter.svg');
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.vinter {
-    background-image: url('noter/note_vinter.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    aspect-ratio: 1172.94/805;
+    width: 100%;
+    height: auto;
 }
 
 .footer {
     position: sticky;
     width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+
+    .border {
+        padding: 7% 5%;
+    }
+
+    .lov_figur {
+        width: 74%;
+        position: absolute;
+        left: 22%;
+        top: 10vh;
+    }
+
+    .border h1 {
+        font-size: 6rem;
+        bottom: 22vh;
+        left: -2%;
+    }
+
+    .lov_txt {
+        font-size: 1.8rem;
+        position: absolute;
+        top: 29.5vh;
+        left: 27%;
+        padding-right: 32%;
+    }
+
+    .grid_note {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .link_s {
+        font-size: 6rem;
+        position: relative;
+        top: 38%;
+        left: 37%;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .link_s:hover {
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
+    }
 }
