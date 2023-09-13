@@ -1,15 +1,3 @@
-/**
- * Generic Styling
-*/
-body {
-    background: linear-gradient(196.59deg, #96de98 0%, #23762A 75.52%);
-    min-height: 100vh;
-    box-sizing: border-box;
-    padding: 10vh 10%;
-    line-height: 1.5;
-    margin: 0 auto;
-}
-
 h2 {
     font-family: "schoolbell-pro", sans-serif;
     font-size: 3.5rem;
