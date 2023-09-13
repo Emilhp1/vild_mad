@@ -31,7 +31,7 @@ function showProduct(product) {
   const copy = template.cloneNode(true);
   copy.querySelector("h3").textContent = product.title;
   copy.querySelector("img").src = product.profile_image;
-  //copy.querySelector(".read-more").setAttribute("href", `produkt.html?id=${product.id}`);
+  copy.querySelector(".read-more").setAttribute("href", `produkt.html?id=${product.id}`);
 
   document.querySelector(".produktgrid").appendChild(copy);
 }
