@@ -2,45 +2,74 @@ body,
 ul {
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
-/* Basic styles for the navigation */
+/* Style for the navigation bar */
 .navbar {
-  background-color: #fece55c0;
-  background-blend-mode: screen;
+  background-color: #fece55a0;
+  overflow: hidden;
+}
+
+/* Logo style */
+.navbar .logo {
+  float: left;
+  padding: 10px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.menu {
-  display: flex;
   align-items: center;
 }
 
-.menu li {
-  margin: 0 20px;
-  position: relative;
+.navbar .logo img {
+  width: 50px; /* Adjust as needed */
+  height: auto;
 }
 
-.menu a {
+/* Navigation links */
+.navbar ul {
+  list-style-type: none;
+  float: right;
+  margin-top: 25px;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 150px;
+}
+
+.navbar ul li a {
+  color: #fff;
   text-decoration: none;
-  color: #2b7e32;
 }
 
-/* Styles for the dropdown menu */
-.submenu {
+/* Burger menu style */
+.burger-menu {
   display: none;
-  position: absolute;
-  background-color: #000000;
-  top: 100%;
-  left: 0;
-  padding: 10px 0;
-  width: 150px;
+  float: right;
+  cursor: pointer;
+  padding: 10px;
+  color: #ffff;
 }
 
-.menu li:hover .submenu {
-  display: block;
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    background-color: #fece55a0;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar ul.active {
+    display: block;
+  }
+
+  .navbar ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .burger-menu {
+    display: block;
+  }
 }

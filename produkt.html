@@ -16,14 +16,21 @@
 
 <body>
     <header>
-        <nav class="navbar">
-            <ul class="menu">
+        <div class="navbar">
+            <div class="logo">
+
+                <img src="logo_hvid.svg" alt="Logo">
+            </div>
+            <div class="burger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul id="nav-links">
                 <li><a href="index.html">Forside</a></li>
                 <li><a href="lovskov.html">Løvskov</a></li>
-                <li><a href="måned.html">Måneder</a></li>
+                <li><a href="måned.html">Sæson</a></li>
                 <li><a href="produkt.html">Råvarer</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
     <div class="ramme">
         <h1 class="overskrift">hej</h1>
@@ -174,6 +181,7 @@
         <img class="footer" src="skov_1.svg" alt="">
     </footer>
     <script src="produkt.js"></script>
+    <script src="nav.js"></script>
 </body>
 
 </html>
