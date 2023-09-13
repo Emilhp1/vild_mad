@@ -8,19 +8,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="måned.css">
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="nav.css">
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar">
-            <ul class="menu">
+        <div class="navbar">
+            <div class="logo">
+
+                <img src="logo_hvid.svg" alt="Logo">
+            </div>
+            <div class="burger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul id="nav-links">
                 <li><a href="index.html">Forside</a></li>
                 <li><a href="lovskov.html">Løvskov</a></li>
-                <li><a href="måned.html">Måneder</a></li>
+                <li><a href="måned.html">Sæson</a></li>
                 <li><a href="produkt.html">Råvarer</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
 
     <h2>Sæson</h2>
@@ -42,6 +50,7 @@
 
 
     <script src="måned.js"></script>
+    <script src="nav.js"></script>
 </body>
 
 </html>

@@ -13,18 +13,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
     <title>Løvskov</title>
+    <link rel="stylesheet" href="nav.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <ul class="menu">
+        <div class="navbar">
+            <div class="logo">
+
+                <img src="logo_hvid.svg" alt="Logo">
+            </div>
+            <div class="burger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul id="nav-links">
                 <li><a href="index.html">Forside</a></li>
                 <li><a href="lovskov.html">Løvskov</a></li>
-                <li><a href="måned.html">Måneder</a></li>
+                <li><a href="måned.html">Sæson</a></li>
                 <li><a href="produkt.html">Råvarer</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
     <section class="border">
         <h1>Løvskov</h1>
@@ -47,6 +55,7 @@
     </footer>
 
     <script src="lovskov.js"></script>
+    <script src="nav.js"></script>
 </body>
 
 </html>
