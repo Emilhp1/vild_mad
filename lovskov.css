@@ -35,7 +35,7 @@ h2 {
     font-size: 0.7rem;
     color: #23762A;
     position: absolute;
-    bottom: 69.5vh;
+    bottom: 66vh;
     left: 16%;
     padding-right: 36.3%;
 }
@@ -153,5 +153,6 @@ h2 {
 
     .link_s:hover {
         text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
+        text-decoration: none;
     }
 }

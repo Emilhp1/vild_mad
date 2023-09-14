@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function showProduct(product) {
     console.log("dette produkt", product[0].title);
-    document.querySelector(".overskrift").textContent = product[0].title;
+    document.querySelector(".ramme h1").textContent = product[0].title;
     document.querySelector(".card img").src = product[0].profile_image;
-    document.querySelector(".card .bio").textContent = product[0].bio;
+    // document.querySelector(".card .bio").textContent = product[0].bio;
     document.querySelector(".sankested").textContent = product[0].sankested;
     document.querySelector(".sæson").textContent = product[0].årstider;
     document.querySelector(".beskrivelse").textContent = product[0].beskrivelse;

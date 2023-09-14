@@ -58,51 +58,39 @@
   }
 }
 
-/**
- * Generic Styling
-*/
-body {
-  background: #96de98;
-  min-height: 100vh;
-  box-sizing: border-box;
-  padding-top: 10vh;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
-  line-height: 1.5;
-  margin: 0 auto;
-  font-size: 112%;
-}
-
 .produktimg {
-  width: 75%;
+  width: 80%;
   margin-left: 10%;
   border: solid black;
   margin-top: 5%;
+  position: absolute;
+  bottom: 34vh;
+  right: 9.5%;
 }
 
 /* Tilføjet af kezia - border omkring h1 */
 .ramme {
   border: 10px solid #fecd55;
-  text-align: center;
 }
 
-/* Tilføjet af kezia - Tilføjet padding + font */
-.overskrift {
-  margin-left: 30%;
-  margin-right: 30%;
+/* .bio {
+  position: absolute;
+  top: 69vh;
+  left: -5%;
+  color: #2b7e32;
+  font-size: 0.9rem;
+} */
+
+/* Tilføjet af kezia - Tilføjet font */
+.ramme h1 {
   text-align: center;
   font-family: "schoolbell-pro", sans-serif;
   color: white;
-  padding: 10%;
 }
 
 p {
   margin-left: 10%;
   margin-right: 10%;
-}
-
-body {
-  background-image: linear-gradient(to bottom right, #96de98, #2b7e32);
 }
 
 .tab {
@@ -112,9 +100,16 @@ body {
 }
 
 .card {
-  background-color: white;
+  /* background-color: white;
   margin: 10%;
-  border: solid black;
+  border: solid black; */
+  background-image: url('ramme.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 391.08/479.99;
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
 }
 
 .svamp {
@@ -177,8 +172,27 @@ p {
 }
 
 @media screen and (min-width: 800px) {
+
+  .ramme h1 {
+    font-size: 6rem;
+  }
+
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10%;
+  }
+
+  .card {
+    margin-top: 10%;
+  }
+
+  .produktimg {
+    width: 39%;
+    margin-left: 10%;
+    margin-top: 5%;
+    position: absolute;
+    top: 63vh;
+    right: 57%;
   }
 }
